@@ -9,3 +9,9 @@ print (ios_output)
 
 #print output with json format
 print (json.dumps(ios_output, indent=4))
+
+ios_output = isovl2.get_interfaces()
+print (json.dumps(ios_output, indent=4))
+
+ios_output = iosvl2.get_interfaces_counters()
+print (json.dumps(ios_output, indent=4))
