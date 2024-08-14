@@ -6,3 +6,6 @@ iosvl2.open()
 
 ios_output = iosvl2.get_facts()
 print (ios_output)
+
+#print output with json format
+print (json.dumps(ios_output, indent=4))
