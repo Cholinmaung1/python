@@ -22,3 +22,9 @@ print (json.dumps(ios_output, sort_keys=True, indent=4))
 
 ios_output = iosvl2.ping("8.8.8.8")
 print (json.dumps(ios_output, indent=4))
+
+ios_output = iosvl2.get_config()
+print (json.dumps(ios_output, indent=4))
+
+ios_output = iosvl2.get_bgp_config()
+print (json.dumps(ios_output, indent=4))
